@@ -13,7 +13,7 @@ function Navbar() {
             <img src={logo} alt="HooBank" className="w-[124px] h-[32px]"/>
             <ul className="list-none sm:flex hidden justify-end items-center flex-1">
                 {navLinks.map((nav,index) => (
-                    <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length-1 ? 'mr-0' : 'mr-10'} text-white`}>
+                    <li key={nav.id} className={`hover:text-secondary font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length-1 ? 'mr-0' : 'mr-10'} text-white`}>
                         <a href={`#${nav.id}`}>{nav.title}</a>
                     </li>
                 ))}
@@ -25,7 +25,7 @@ function Navbar() {
                     <ul className="list-none flex justify-end items-center flex-1 flex-col cursor-pointer">
                         {navLinks.map((nav, index) => (
                             <li key={nav.id}
-                                className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-white`}>
+                                className={`    hover:text-secondary font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-white`}>
                                 <a href={`#${nav.id}`}>{nav.title}</a>
                             </li>
                         ))}
